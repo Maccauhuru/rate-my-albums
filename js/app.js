@@ -45,8 +45,16 @@ btn.addEventListener("click", (e) => {
     isTopTen,
     ytlink
   };
-
-
   albums.ref().push(favAlbums);
-
+  clearInputs();
 });
+
+function clearInputs() {
+  artName.value = "";
+  albName.value = "";
+  albYear.value = "";
+  albRating.value = "";
+  albGenre.value = "";
+  albIsTopTen.value = "";
+  albYtlink.value = "";
+}
